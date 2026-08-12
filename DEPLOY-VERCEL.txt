@@ -1,0 +1,30 @@
+IMSTORE — VERCEL READY
+======================
+
+STRUKTUR WAJIB:
+index.html
+vercel.json
+asset-check.html
+assets/
+  foto...
+  video...
+
+Jangan upload index.html sendirian. Upload / deploy SELURUH folder project ini.
+
+CARA PALING AMAN:
+1. Extract ZIP.
+2. Masuk ke folder hasil extract.
+3. Deploy folder tersebut ke Vercel sebagai project static/Other.
+4. Setelah deploy, buka:
+   /asset-check.html
+5. Semua foto dan video harus bertanda OK.
+6. Baru buka halaman utama.
+
+JIKA PAKAI VERCEL CLI:
+- Jalankan dari folder yang berisi index.html dan vercel.json.
+- `vercel --prod`
+
+Catatan:
+- Video sudah H.264 + AAC dan memakai poster JPG.
+- Path media memakai relative path `assets/...`.
+- vercel.json memberi cache dan MIME type untuk MP4.

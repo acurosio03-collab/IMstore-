@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Demo website IMSTORE KOMPUTER CIREBON — solusi laptop, PC, upgrade, perakitan dan servis.">
+<title>IMSTORE KOMPUTER CIREBON — Demo Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1220;--blue:#18b7d9;--blue2:#0e91b5;--ink:#111827;--muted:#64748b;--bg:#f7fafc;--line:#e5e7eb;--white:#fff;--shadow:0 20px 50px rgba(15,23,42,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(229,231,235,.8)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.5px}.brand span{color:var(--blue2)}.menu{display:flex;gap:28px;font-size:14px;color:#475569}.menu a:hover{color:var(--blue2)}.navbtn{background:var(--navy);color:white;padding:11px 17px;border-radius:12px;font-weight:700;font-size:13px}
+.hero{background:radial-gradient(circle at 80% 15%,rgba(24,183,217,.18),transparent 30%),linear-gradient(135deg,#f8fbfd,#fff);padding:82px 0 72px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#e8f9fc;color:#087e9c;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(40px,5vw,68px);line-height:1.03;letter-spacing:-3px;margin:18px 0}.hero h1 span{color:var(--blue2)}.hero p{font-size:17px;color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;margin:28px 0}.btn{padding:14px 19px;border-radius:13px;font-weight:800;font-size:14px;border:1px solid var(--line)}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.btn.secondary{background:#fff}.rating{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted)}.stars{color:#f5b400;font-size:19px;letter-spacing:1px}.hero-photo{position:relative}.hero-photo img{width:100%;height:460px;object-fit:cover;border-radius:28px;box-shadow:var(--shadow)}.badge{position:absolute;bottom:20px;left:20px;background:rgba(255,255,255,.95);padding:13px 16px;border-radius:16px;font-size:13px;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.section{padding:88px 0}.section.alt{background:var(--bg)}.heading{text-align:center;max-width:650px;margin:0 auto 42px}.heading h2{font-size:36px;letter-spacing:-1.5px;margin:0 0 10px}.heading p{color:var(--muted);margin:0}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:20px;padding:23px;background:white}.icon{width:44px;height:44px;border-radius:13px;background:#e8f9fc;display:grid;place-items:center;color:#0786a4;font-weight:800;margin-bottom:18px}.card h3{font-size:17px;margin:0 0 7px}.card p{font-size:13px;color:var(--muted);margin:0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:#fff}.product img{width:100%;height:220px;object-fit:cover}.product .pad{padding:20px}.product h3{margin:0 0 6px}.product p{margin:0;color:var(--muted);font-size:13px}
+.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.service{padding:25px;border:1px solid var(--line);border-radius:20px}.service strong{display:block;font-size:16px;margin-bottom:5px}.service span{color:var(--muted);font-size:13px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about img{width:100%;height:440px;object-fit:cover;border-radius:26px}.about h2{font-size:38px;letter-spacing:-1.5px;margin:0 0 14px}.about p{color:var(--muted)}.check{display:grid;gap:10px;margin-top:20px}.check div:before{content:"✓";color:var(--blue2);font-weight:800;margin-right:9px}
+.gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.gallery img{width:100%;height:240px;object-fit:cover;border-radius:18px}.gallery .big{height:494px;grid-row:span 2}
+.location{display:grid;grid-template-columns:1fr 1fr;gap:25px}.mapbox{min-height:340px;border-radius:24px;background:#eaf1f4;overflow:hidden;position:relative}.mapbox img{width:100%;height:100%;object-fit:cover;filter:saturate(.8)}.maplabel{position:absolute;inset:auto 16px 16px 16px;background:rgba(255,255,255,.95);padding:15px;border-radius:15px;font-size:13px}.contactbox{border:1px solid var(--line);border-radius:24px;padding:32px}.contactbox h2{font-size:30px;line-height:1.15;margin-top:0}.info{display:grid;gap:16px;margin:22px 0}.info b{display:block;font-size:13px}.info span{color:var(--muted);font-size:14px}
+.cta{margin:0 0 88px;background:var(--navy);color:white;border-radius:28px;padding:50px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:34px;line-height:1.15;margin:0 0 8px}.cta p{margin:0;color:#b9c4d3}.cta .btn{background:var(--blue);border-color:var(--blue);color:#07121c}
+footer{background:#070d17;color:#94a3b8;padding:45px 0}.foot{display:flex;justify-content:space-between;gap:30px}.foot strong{color:white}.foot small{display:block;margin-top:8px}.demo-note{font-size:11px;color:#94a3b8;margin-top:25px}
+@media(max-width:850px){.menu{display:none}.hero-grid,.about,.location{grid-template-columns:1fr}.hero{padding-top:55px}.hero-photo img{height:350px}.grid4{grid-template-columns:1fr 1fr}.products{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr}.cta{flex-direction:column;align-items:flex-start}.gallery{grid-template-columns:1fr}.gallery .big{height:300px}.gallery img{height:220px}}
+@media(max-width:520px){.navin{height:66px}.navbtn{padding:9px 12px}.hero h1{font-size:42px;letter-spacing:-2px}.grid4{grid-template-columns:1fr}.section{padding:65px 0}.cta{padding:30px}.cta h2{font-size:28px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container navin">
+<a class="brand" href="#">IMSTORE <span>KOMPUTER</span></a>
+<div class="menu"><a href="#produk">Produk</a><a href="#layanan">Layanan</a><a href="#tentang">Tentang</a><a href="#galeri">Galeri</a><a href="#kontak">Kontak</a></div>
+<a class="navbtn" href="#kontak">Hubungi Kami</a>
+</div></nav>
+
+<header class="hero"><div class="container hero-grid">
+<div>
+<div class="eyebrow">TOKO KOMPUTER • CIREBON</div>
+<h1>Solusi Laptop & Komputer <span>Terpercaya</span> di Cirebon.</h1>
+<p>Jual beli laptop, PC, upgrade, perakitan, dan layanan servis untuk kebutuhan pribadi maupun bisnis.</p>
+<div class="actions"><a class="btn primary" href="#produk">Lihat Produk</a><a class="btn secondary" href="#layanan">Lihat Layanan</a></div>
+<div class="rating"><span class="stars">★★★★★</span><b>4.7/5</b><span>• 90+ ulasan Google</span></div>
+</div>
+<div class="hero-photo"><img src="assets/toko-depan.jpg" alt="Tampak depan IMSTORE Komputer"><div class="badge">IMSTORE KOMPUTER CIREBON</div></div>
+</div></header>
+
+<section class="section"><div class="container">
+<div class="heading"><h2>Kenapa pilih IMSTORE?</h2><p>Website demo yang menonjolkan informasi penting agar calon pelanggan lebih mudah mengenal dan menghubungi toko.</p></div>
+<div class="grid4">
+<div class="card"><div class="icon">01</div><h3>Pelayanan Ramah</h3><p>Pengunjung memberikan kesan positif terhadap pelayanan toko.</p></div>
+<div class="card"><div class="icon">02</div><h3>Teknisi Detail</h3><p>Kerusakan perangkat dapat dijelaskan secara lebih detail kepada pelanggan.</p></div>
+<div class="card"><div class="icon">03</div><h3>Solusi Komputer</h3><p>Mulai dari pembelian, upgrade hingga perbaikan perangkat.</p></div>
+<div class="card"><div class="icon">04</div><h3>Datang ke Toko</h3><p>Pelanggan dapat berbelanja dan berkonsultasi langsung.</p></div>
+</div></div></section>
+
+<section id="produk" class="section alt"><div class="container">
+<div class="heading"><h2>Produk & Kebutuhan Komputer</h2><p>Temukan kategori yang sesuai dengan kebutuhan Anda.</p></div>
+<div class="products">
+<div class="product"><img src="assets/laptop-servis.jpg" alt="Laptop"><div class="pad"><h3>Laptop</h3><p>Laptop untuk kebutuhan kerja, belajar, maupun penggunaan harian.</p></div></div>
+<div class="product"><img src="assets/toko-aktivitas.jpg" alt="PC dan komputer"><div class="pad"><h3>PC & Desktop</h3><p>Solusi komputer desktop dan kebutuhan setup Anda.</p></div></div>
+<div class="product"><img src="assets/toko-depan.jpg" alt="Komponen komputer"><div class="pad"><h3>Komponen & Aksesoris</h3><p>Tanyakan ketersediaan komponen, sparepart dan aksesoris.</p></div></div>
+</div></div></section>
+
+<section id="layanan" class="section"><div class="container">
+<div class="heading"><h2>Layanan Komputer & Laptop</h2><p>Berbagai layanan untuk membantu perangkat tetap siap digunakan.</p></div>
+<div class="service-grid">
+<div class="service"><strong>Servis Laptop & PC</strong><span>Pengecekan dan perbaikan perangkat sesuai masalah yang ditemukan.</span></div>
+<div class="service"><strong>Upgrade Laptop & PC</strong><span>Bantu menentukan upgrade yang sesuai dengan kebutuhan dan budget.</span></div>
+<div class="service"><strong>Perakitan PC</strong><span>Konsultasikan kebutuhan rakitan sebelum menentukan komponen.</span></div>
+<div class="service"><strong>Instalasi & Maintenance</strong><span>Bantuan instalasi software dan perawatan perangkat.</span></div>
+</div></div></section>
+
+<section id="tentang" class="section alt"><div class="container about">
+<img src="assets/toko-aktivitas.jpg" alt="Aktivitas di toko IMSTORE">
+<div><div class="eyebrow">TENTANG IMSTORE</div><h2>IMSTORE KOMPUTER CIREBON</h2><p>IMSTORE KOMPUTER adalah toko komputer di Cirebon yang melayani kebutuhan laptop, komputer, upgrade, perakitan, dan perbaikan perangkat.</p><div class="check"><div>Jual beli laptop & komputer</div><div>Servis dan perbaikan</div><div>Upgrade & perakitan</div><div>Belanja langsung di toko</div></div></div>
+</div></section>
+
+<section id="galeri" class="section"><div class="container">
+<div class="heading"><h2>Galeri</h2><p>Gambaran suasana toko dan aktivitas yang tersedia.</p></div>
+<div class="gallery"><img class="big" src="assets/toko-depan.jpg" alt="Toko IMSTORE"><div><img src="assets/laptop-servis.jpg" alt="Laptop"></div><div><img src="assets/toko-aktivitas.jpg" alt="Aktivitas toko"></div></div>
+</div></section>
+
+<section id="kontak" class="section alt"><div class="container location">
+<div class="mapbox"><img src="assets/maps-reference.jpg" alt="Referensi Google Maps"><div class="maplabel"><b>IMSTORE KOMPUTER CIREBON</b><br>Cirebon, Jawa Barat</div></div>
+<div class="contactbox"><div class="eyebrow">KUNJUNGI TOKO</div><h2>Butuh Laptop, PC, atau Servis?</h2><p style="color:var(--muted)">Hubungi IMSTORE untuk menanyakan produk, layanan, ketersediaan atau kebutuhan komputer Anda.</p>
+<div class="info"><div><b>Lokasi</b><span>Cirebon, Jawa Barat, Indonesia</span></div><div><b>Jam operasional</b><span>Terlihat buka hingga sekitar 17.30* </span></div><div><b>WhatsApp</b><span>[Nomor WhatsApp]</span></div></div>
+<div class="actions"><a class="btn primary" href="#">Konsultasi WhatsApp</a><a class="btn secondary" href="#">Google Maps</a></div>
+</div></div></section>
+
+<div class="container"><div class="cta"><div><h2>Siap bantu kebutuhan komputer Anda.</h2><p>Jadikan website ini sebagai demo awal untuk IMSTORE KOMPUTER CIREBON.</p></div><a class="btn" href="#kontak">Hubungi IMSTORE</a></div></div>
+
+<footer><div class="container foot"><div><strong>IMSTORE KOMPUTER CIREBON</strong><small>Solusi laptop, PC & servis komputer.</small></div><div>© 2026 IMSTORE Demo</div></div><div class="container demo-note">DEMO WEBSITE — Beberapa informasi kontak/alamat lengkap masih berupa placeholder dan perlu dikonfirmasi kepada pemilik bisnis.</div></footer>
+</body>
+                                                                                       </html>
